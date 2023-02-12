@@ -1,8 +1,9 @@
 import { useRouter } from 'next/router'
 
 const Projects = () => {
+  const router = useRouter();
   return (
-    const router = useRouter();
+    
     <>
     <div className="">
 
