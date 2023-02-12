@@ -1,7 +1,8 @@
-
+import { useRouter } from 'next/router'
 
 const Projects = () => {
   return (
+    const router = useRouter();
     <>
     <div className="">
 
@@ -10,7 +11,9 @@ const Projects = () => {
       <h1 className="text-2xl font-extrabold text-blue-50 drop-shadow-md font-mono ">
         Projects Section is not built yet.
          </h1>
-         <h2 className="text-2xl font-extrabold text-blue-50 drop-shadow-md font-mono ">Visit <a className='cursor-pointer underline hover:text-blue-600'>github&#8599;</a> for more info.</h2>
+         <h2 className="text-2xl font-extrabold text-blue-50 drop-shadow-md font-mono ">Visit <a className='cursor-pointer underline hover:text-blue-600'
+    onClick={()=> router.push("https://github.com/milinddhamu")}
+    >github&#8599;</a> for more info.</h2>
     </div>
     </div>
     </>
