@@ -160,7 +160,7 @@ const Profile = () => {
                     }}
                     
                     className="shadow-sm flex justify-center drop-shadow-md border-[1px] border-white700 items-center rounded-md h-32 w-32 cursor-pointer bg-gradient-to-bl from-slate50 to-slate400 backdrop-blur-sm 
-                    hover:border-white"
+                    hover:border-white hover:backdrop-blur-md"
                     onClick={() => router.push("https://www.javascript.com/")}
                   >
                     <Image
@@ -184,7 +184,7 @@ const Profile = () => {
                     }}
                     
                     className="shadow-sm flex justify-center items-center drop-shadow-md rounded-md h-32 w-32 bg-gradient-to-bl from-slate50 to-slate400 backdrop-blur-sm cursor-pointer  border-white700 border-[1px]
-                  hover:border-white"
+                  hover:border-white hover:backdrop-blur-md"
                     onClick={() => router.push("https://www.python.org/")}
                   >
                     <Image
@@ -206,7 +206,7 @@ const Profile = () => {
                     }}
                     
                     className="shadow-sm flex justify-center items-center drop-shadow-md rounded-md h-32 w-32 bg-gradient-to-bl from-slate50 to-slate400 backdrop-blur-sm cursor-pointer  border-[1px] border-white700
-                  hover:border-white"
+                  hover:border-white hover:backdrop-blur-md"
                     onClick={() => router.push("https://code.visualstudio.com/")}
                   >
                     <Image
@@ -228,7 +228,7 @@ const Profile = () => {
                     }}
                     
                     className="shadow-sm flex justify-center items-center drop-shadow-md rounded-md h-32 w-32 bg-gradient-to-bl from-slate50 to-slate400 backdrop-blur-sm cursor-pointer pt-1  border-[1px] border-white700
-                  hover:border-white"
+                  hover:border-white hover:backdrop-blur-md"
                     onClick={() => router.push("https://developer.mozilla.org/en-US/docs/Web/HTML")}
                   >
                     <Image
@@ -251,7 +251,7 @@ const Profile = () => {
                     
                     className="shadow-sm flex justify-center items-center drop-shadow-md rounded-md
                    h-32 w-32 bg-gradient-to-bl from-slate50 to-slate400 backdrop-blur-sm cursor-pointer 
-                  border-[1px] border-white700 hover:border-white"
+                  border-[1px] border-white700 hover:border-white hover:backdrop-blur-md"
                     onClick={() => router.push("https://reactjs.org/")}
                   >
                     <Image
@@ -273,8 +273,8 @@ const Profile = () => {
                     }}
                     
                     className="shadow-sm flex justify-center
-                  border-[1px] border-white700 items-center rounded-md drop-shadow-md h-32 w-32 bg-gradient-to-bl from-slate50 to-slate400 0backdrop-blur-sm cursor-pointer
-                  hover:border-white
+                  border-[1px] border-white700 items-center rounded-md drop-shadow-md h-32 w-32 bg-gradient-to-bl from-slate50 to-slate400 backdrop-blur-sm hover:backdrop-blur-md cursor-pointer
+                  hover:border-white hover:backdrop-blur-md
                   "
                     onClick={() => router.push("https://tailwindcss.com/")}
                   >
@@ -297,7 +297,7 @@ const Profile = () => {
                     }}
                     
                     className="shadow-sm flex justify-center items-center drop-shadow-md rounded-md h-32 w-32 bg-gradient-to-bl from-slate50 to-slate400 backdrop-blur-sm cursor-pointer pt-1  border-[1px] border-white700
-                  hover:border-white"
+                  hover:border-white hover:backdrop-blur-md"
                     onClick={() => router.push("https://developer.mozilla.org/en-US/docs/Web/CSS")}
                   >
                     <Image
@@ -319,7 +319,7 @@ const Profile = () => {
                     }}
                     
                     className="shadow-sm flex justify-center items-center drop-shadow-md rounded-md h-32 w-32 bg-gradient-to-bl from-slate50 to-slate400  backdrop-blur-sm cursor-pointer  border-[1px] border-white700
-                  hover:border-white"
+                  hover:border-white hover:backdrop-blur-md"
                     onClick={() => router.push("https://nextjs.org/")}
                   >
                     <Image
@@ -342,7 +342,7 @@ const Profile = () => {
                     }}
                     
                     className="shadow-sm flex justify-center items-center drop-shadow-md rounded-md h-32 w-32 bg-gradient-to-bl from-slate50 to-slate400 backdrop-blur-sm cursor-pointer  border-[1px] border-white700
-                  hover:border-white"
+                  hover:border-white hover:backdrop-blur-md"
                     onClick={() => router.push("https://git-scm.com/")}
                   >
                     <Image
@@ -364,7 +364,7 @@ const Profile = () => {
                     }}
                     
                     className="shadow-sm flex justify-center box-shadow-md drop-shadow-md items-center rounded-md h-32 w-32 bg-gradient-to-bl from-slate50 to-slate400 backdrop-blur-sm cursor-pointer border-[1px] border-white700
-                  hover:border-white"
+                  hover:border-white hover:backdrop-blur-md"
                     onClick={() => router.push("https://firebase.google.com/")}
                   >
                     <Image
