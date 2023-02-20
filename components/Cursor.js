@@ -32,9 +32,10 @@ const Cursor = () => {
 
   return (
     <motion.div 
-    className='bg-slate-400 opacity-40 border-8 border-slate-300 h-[60px] w-[60px] rounded-[50%] fixed top-[-25px] left-[-25px] z-[-1]'
+    className='bg-violet-400 opacity-40 border-8 border-slate-300 h-[60px] w-[60px] rounded-[50%] fixed top-[-25px] left-[-25px] z-[-1]'
     variants={variants}
-    animate='default'>
+    animate='default'
+    transition={{ type: 'spring' }}>
     </motion.div>
   );
 }

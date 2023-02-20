@@ -45,12 +45,12 @@ const Profile = () => {
               className="flex flex-col animate-text max-h-max max-w-max bg-gradient-to-r from-indigo-500 via-violet-500 to-blue-600 bg-clip-text text-transparent md:flex md:justify-center sm:justify-center
             "
             >
-              <div className='flex flex-col sm:flex justify-start md:flex'>
-                <ul className="font-serif italic text-4xl pb-3 sm:text-2xl">
-                  Hey there&#33; I&#39;m
+              <div className='flex flex-col justify-start pl-4'>
+                <ul className="font-serif  text-xl pb-3 sm:text-2xl">
+                  Hey&#33; there I&#39;m
                 </ul>
-                <div className='flex flex-row sm:flex sm:text-5xl xl:text-6xl xl:flex xlg:text-8xl xlg:flex'>
-                  <ul className="flex font-serif font-extrabold ">
+                <div className='flex flex-col font-serif font-extrabold text-6xl sm:text-7xl xl:text-9xl'>
+                  <ul className="flex  ">
                     {name.map((letter, index) => {
                       return(
                         <Name key={index}>
@@ -58,33 +58,26 @@ const Profile = () => {
                         </Name>
                       ) 
                       })}
-                      <div>&nbsp;</div>
+                      <div>&nbsp;</div>    
                   </ul>
-                  <ul className="flex font-serif font-extrabold ">
-                  {surname.map((letter, index) => {
-                      return(
-                        <Name key={index}>
-                          {letter}
-                        </Name>
-                      ) 
-                      })}
-                  </ul>
+                  
+                  
                 </div>
               </div>
             </div>
-            <div>
-              <h1 className="font-mono text-xl mb-20">
+            <div className='sm:flex'>
+              <h1 className="font-mono text-sm sm:text-xl mb-20">
                   A wannabe Frontend Developer , intrested in Trendy Fun Tech!
               </h1>
             </div>
-            <div className="group hover:backdrop-blur-md border-[1px] border-slate800 flex justify-center h-48 bg-black drop-shadow-md backdrop-blur-[2px] bg-opacity-20 rounded-xl shadow-sm">
+            <div className="group hover:backdrop-blur-md border-[1px] border-slate800 flex justify-center h-40 sm:h-48 bg-black   drop-shadow-md backdrop-blur-[2px] bg-opacity-20 rounded-xl shadow-sm ">
               <div className="flex flex-col justify-between items-center m-4">
-                <h1 className="font-bold text-2xl font-mono text-white drop-shadow-md mt-4">
-                  connect with me
+                <h1 className="font-bold text-md sm:text-xl font-mono text-white drop-shadow-md mt-4 text-slate-200 ">
+                  Connect with me
                 </h1>
-                <div className="flex flex-row justify-center items-center gap-4 mt-[-4px]">
+                <div className="flex flex-row justify-center items-center gap-4 mt-[-4px] relative">
                   <u1
-                    className="drop-shadow-md cursor-pointer hover:scale-110"
+                    className="drop-shadow-md cursor-pointer hover:scale-110 w-10 h-10 transition-all md:h-12 md:w-12"
                     onClick={() =>
                       router.push("https://github.com/milinddhamu")
                     }
@@ -92,13 +85,13 @@ const Profile = () => {
                     <Image
                       src={githublogo}
                       alt=""
-                      height={50}
-                      width={50}
+                      layout='fill'
                       quality={100}
+                      
                     />
                   </u1>
                   <u1
-                    className="drop-shadow-md cursor-pointer hover:scale-110 transition-all"
+                    className="drop-shadow-md cursor-pointer hover:scale-110 transition-all w-10 h-10 md:h-12 md:w-12"
                     onClick={() =>
                       router.push("https://www.linkedin.com/in/milinddhamu/")
                     }
@@ -106,14 +99,13 @@ const Profile = () => {
                     <Image
                       src={linkedinlogo}
                       alt=""
-                      height={50}
-                      width={50}
+                      layout='fill'
                       quality={100}
                     />
                   </u1>
 
                   <u1
-                    className="drop-shadow-md cursor-pointer ml-2 hover:scale-110"
+                    className="drop-shadow-md cursor-pointer ml-1 hover:scale-110 transition-all w-9 h-9 md:h-12 md:w-12"
                     onClick={() =>
                       router.push("mailto:milind.dhamu.123@gmail.com")
                     }
@@ -121,20 +113,20 @@ const Profile = () => {
                     <Image
                       src={mailicon}
                       alt=""
-                      height={45}
-                      width={45}
+                      layout='fill'
                       quality={100}
+                      
                     />
                   </u1>
                 </div>
                 <h2 
-                className="text-white font-serif drop-shadow-xl">&#169;{new Date().getFullYear()}</h2>
+                className="text-white font-serif drop-shadow-xl text-slate-200">&#169;{new Date().getFullYear()}</h2>
               </div>
               <div></div>
             </div>
           </div>
 
-          <div className="flex-col justify-start mt-20 w-full hidden xlg:flex overflow-hidden pl-20">
+          <div className="flex-col justify-start mt-20 w-full hidden xlg:flex overflow-hidden pl-20 mr-2">
             <div className="flex-end">
               <div className="flex flex-row justify-end mx-20 text-4xl font-mono motion-safe:animate-fadeIn ">
                 <Typewriter
@@ -159,16 +151,17 @@ const Profile = () => {
                       transition: { duration: 0.1 },
                     }}
                     
-                    className="shadow-sm flex justify-center drop-shadow-md border-[1px] border-white700 items-center rounded-md h-32 w-32 cursor-pointer bg-gradient-to-bl from-slate50 to-slate400 backdrop-blur-sm 
+                    className="shadow-sm flex justify-center drop-shadow-md border-[1px] border-white700 items-center rounded-md h-32 w-32 cursor-pointer bg-gradient-to-bl from-slate50 to-slate400 backdrop-blur-[2px] 
                     hover:border-white hover:backdrop-blur-md"
                     onClick={() => router.push("https://www.javascript.com/")}
                   >
                     <Image
                       src={jsicon}
                       alt=""
-                      width={80}
-                      height={80}
+                      width={70}
+                      height={70}
                       quality={"100%"}
+                      className='drop-shadow-md'
                       
                     />
                     
@@ -183,16 +176,17 @@ const Profile = () => {
                       transition: { duration: 0.1 },
                     }}
                     
-                    className="shadow-sm flex justify-center items-center drop-shadow-md rounded-md h-32 w-32 bg-gradient-to-bl from-slate50 to-slate400 backdrop-blur-sm cursor-pointer  border-white700 border-[1px]
+                    className="shadow-sm flex justify-center items-center drop-shadow-md rounded-md h-32 w-32 bg-gradient-to-bl from-slate50 to-slate400 backdrop-blur-[2px] cursor-pointer  border-white700 border-[1px] pt-1
                   hover:border-white hover:backdrop-blur-md"
                     onClick={() => router.push("https://www.python.org/")}
                   >
                     <Image
-                      src={pythonicon}
+                      src={htmlicon}
                       alt=""
-                      width={60}
-                      height={60}
+                      width={70}
+                      height={70}
                       quality={"100%"}
+                      className='drop-shadow-md'
                     />
                   </motion.u1>
                   <motion.u1
@@ -205,16 +199,17 @@ const Profile = () => {
                       transition: { duration: 0.1 },
                     }}
                     
-                    className="shadow-sm flex justify-center items-center drop-shadow-md rounded-md h-32 w-32 bg-gradient-to-bl from-slate50 to-slate400 backdrop-blur-sm cursor-pointer  border-[1px] border-white700
+                    className="shadow-sm flex justify-center items-center drop-shadow-md rounded-md h-32 w-32 bg-gradient-to-bl from-slate50 to-slate400 backdrop-blur-[2px] cursor-pointer pt-1 border-[1px] border-white700
                   hover:border-white hover:backdrop-blur-md"
                     onClick={() => router.push("https://code.visualstudio.com/")}
                   >
                     <Image
-                      src={vscodeicon}
+                      src={cssicon}
                       alt=""
-                      width={60}
-                      height={60}
+                      width={70}
+                      height={70}
                       quality={"100%"}
+                      className='drop-shadow-md'
                     />
                   </motion.u1>
                   <motion.u1
@@ -227,16 +222,17 @@ const Profile = () => {
                       transition: { duration: 0.1 },
                     }}
                     
-                    className="shadow-sm flex justify-center items-center drop-shadow-md rounded-md h-32 w-32 bg-gradient-to-bl from-slate50 to-slate400 backdrop-blur-sm cursor-pointer pt-1  border-[1px] border-white700
+                    className="shadow-sm flex justify-center items-center drop-shadow-md rounded-md h-32 w-32 bg-gradient-to-bl from-slate50 to-slate400 backdrop-blur-[2px] cursor-pointer  border-[1px] border-white700
                   hover:border-white hover:backdrop-blur-md"
                     onClick={() => router.push("https://developer.mozilla.org/en-US/docs/Web/HTML")}
                   >
                     <Image
-                      src={htmlicon}
+                      src={nexticon}
                       alt=""
-                      width={80}
-                      height={80}
+                      width={60}
+                      height={60}
                       quality={"100%"}
+                      className='drop-shadow-md'
                     />
                   </motion.u1>
                   <motion.u1
@@ -250,16 +246,17 @@ const Profile = () => {
                     }}
                     
                     className="shadow-sm flex justify-center items-center drop-shadow-md rounded-md
-                   h-32 w-32 bg-gradient-to-bl from-slate50 to-slate400 backdrop-blur-sm cursor-pointer 
+                   h-32 w-32 bg-gradient-to-bl from-slate50 to-slate400 backdrop-blur-[2px] cursor-pointer 
                   border-[1px] border-white700 hover:border-white hover:backdrop-blur-md"
                     onClick={() => router.push("https://reactjs.org/")}
                   >
                     <Image
                       src={reacticon}
                       alt=""
-                      width={80}
-                      height={80}
+                      width={70}
+                      height={70}
                       quality={"100%"}
+                      className='drop-shadow-md'
                     />
                   </motion.u1>
                   <motion.u1
@@ -273,7 +270,7 @@ const Profile = () => {
                     }}
                     
                     className="shadow-sm flex justify-center
-                  border-[1px] border-white700 items-center rounded-md drop-shadow-md h-32 w-32 bg-gradient-to-bl from-slate50 to-slate400 backdrop-blur-sm hover:backdrop-blur-md cursor-pointer
+                  border-[1px] border-white700 items-center rounded-md drop-shadow-md h-32 w-32 bg-gradient-to-bl from-slate50 to-slate400 backdrop-blur-[2px] hover:backdrop-blur-md cursor-pointer
                   hover:border-white hover:backdrop-blur-md
                   "
                     onClick={() => router.push("https://tailwindcss.com/")}
@@ -281,9 +278,10 @@ const Profile = () => {
                     <Image
                       src={tailwindicon}
                       alt=""
-                      width={60}
-                      height={60}
+                      width={65}
+                      height={65}
                       quality={"100%"}
+                      className='drop-shadow-md'
                     />
                   </motion.u1>
                   <motion.u1
@@ -296,16 +294,17 @@ const Profile = () => {
                       transition: { duration: 0.1 },
                     }}
                     
-                    className="shadow-sm flex justify-center items-center drop-shadow-md rounded-md h-32 w-32 bg-gradient-to-bl from-slate50 to-slate400 backdrop-blur-sm cursor-pointer pt-1  border-[1px] border-white700
+                    className="shadow-sm flex justify-center items-center drop-shadow-md rounded-md h-32 w-32 bg-gradient-to-bl from-slate50 to-slate400 backdrop-blur-[2px] cursor-pointer pt-1  border-[1px] border-white700
                   hover:border-white hover:backdrop-blur-md"
                     onClick={() => router.push("https://developer.mozilla.org/en-US/docs/Web/CSS")}
                   >
                     <Image
-                      src={cssicon}
+                      src={pythonicon}
                       alt=""
-                      width={80}
-                      height={80}
+                      width={60}
+                      height={60}
                       quality={"100%"}
+                      className='drop-shadow-md'
                     />
                   </motion.u1>
                   <motion.u1
@@ -318,16 +317,17 @@ const Profile = () => {
                       transition: { duration: 0.1 },
                     }}
                     
-                    className="shadow-sm flex justify-center items-center drop-shadow-md rounded-md h-32 w-32 bg-gradient-to-bl from-slate50 to-slate400  backdrop-blur-sm cursor-pointer  border-[1px] border-white700
+                    className="shadow-sm flex justify-center items-center drop-shadow-md rounded-md h-32 w-32 bg-gradient-to-bl from-slate50 to-slate400  backdrop-blur-[2px] cursor-pointer  border-[1px] border-white700
                   hover:border-white hover:backdrop-blur-md"
                     onClick={() => router.push("https://nextjs.org/")}
                   >
                     <Image
-                      src={nexticon}
+                      src={giticon}
                       alt=""
                       width={60}
                       height={60}
                       quality={"100%"}
+                      className='drop-shadow-md'
                     />
                   </motion.u1>
                   <motion.u2
@@ -341,16 +341,17 @@ const Profile = () => {
                       transition: { duration: 0.1 },
                     }}
                     
-                    className="shadow-sm flex justify-center items-center drop-shadow-md rounded-md h-32 w-32 bg-gradient-to-bl from-slate50 to-slate400 backdrop-blur-sm cursor-pointer  border-[1px] border-white700
+                    className="shadow-sm flex justify-center items-center drop-shadow-md rounded-md h-32 w-32 bg-gradient-to-bl from-slate50 to-slate400 backdrop-blur-[2px] cursor-pointer  border-[1px] border-white700
                   hover:border-white hover:backdrop-blur-md"
                     onClick={() => router.push("https://git-scm.com/")}
                   >
                     <Image
-                      src={giticon}
+                      src={vscodeicon}
                       alt=""
-                      width={60}
-                      height={60}
+                      width={70}
+                      height={70}
                       quality={"100%"}
+                      className='drop-shadow-md'
                     />
                   </motion.u2>
                   <motion.u1
@@ -363,7 +364,7 @@ const Profile = () => {
                       transition: { duration: 0.1 },
                     }}
                     
-                    className="shadow-sm flex justify-center box-shadow-md drop-shadow-md items-center rounded-md h-32 w-32 bg-gradient-to-bl from-slate50 to-slate400 backdrop-blur-sm cursor-pointer border-[1px] border-white700
+                    className="shadow-sm flex justify-center box-shadow-md drop-shadow-md items-center rounded-md h-32 w-32 bg-gradient-to-bl from-slate50 to-slate400 backdrop-blur-[2px] cursor-pointer border-[1px] border-white700
                   hover:border-white hover:backdrop-blur-md"
                     onClick={() => router.push("https://firebase.google.com/")}
                   >
@@ -373,6 +374,7 @@ const Profile = () => {
                       width={60}
                       height={60}
                       quality={"100%"}
+                      className='drop-shadow-md'
                     />
                   </motion.u1>
                   <motion.u1
@@ -400,7 +402,7 @@ const Profile = () => {
                       width={60}
                       height={60}
                       quality={"100%"}
-                      className='pt-6 snap-start cursor-pointer '
+                      className='pt-6 snap-start cursor-pointer drop-shadow-md'
                       />
                       <Image
                       src={framericon}
@@ -409,7 +411,7 @@ const Profile = () => {
                       width={50}
                       height={50}
                       quality={"100%"}
-                      className='mx-2 snap-center cursor-pointer '
+                      className='mx-2 snap-center cursor-pointer drop-shadow-md'
                       /> 
                       <Image
                       src={bootstrapicon}
@@ -418,7 +420,7 @@ const Profile = () => {
                       width={60}
                       height={60}
                       quality={"100%"}
-                      className='snap-center cursor-pointer '
+                      className='snap-center cursor-pointer drop-shadow-md'
                       />
                       <Image
                       src={photoshopicon}
@@ -427,7 +429,7 @@ const Profile = () => {
                       width={60}
                       height={60}
                       quality={"100%"}
-                      className='snap-center cursor-pointer '
+                      className='snap-center cursor-pointer drop-shadow-md'
                       />
                       <Image
                       src={illustratoricon}
@@ -436,7 +438,7 @@ const Profile = () => {
                       width={60}
                       height={60}
                       quality={"100%"}
-                      className='snap-center pb-6 cursor-pointer '
+                      className='snap-center pb-6 cursor-pointer drop-shadow-md'
                       />   
                       </motion.div>
                       <div className='flex'>
@@ -453,7 +455,7 @@ const Profile = () => {
                         </div>
                       <div className='flex flex-col justify-end items-center font-mono text-xl text-slate-800 m-2 pl-4'>
                       <h1>Familiar</h1>
-                      <h1>With</h1>   
+                      <h1>with</h1>   
                       </div>
                     </motion.div>
                   </motion.u1>

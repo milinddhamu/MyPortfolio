@@ -3,6 +3,10 @@ module.exports = {
   content:['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+
+      boxShadow:{
+        'innerxl':'inset 0 2px 4px 0 rgb(0 0 0 / 0.05)'
+      },
       colors:{
         slate50:'rgb(248 250 252 /20%)',
         slate400:'rgb(148 163 184 /20%)',
