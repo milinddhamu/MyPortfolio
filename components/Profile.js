@@ -50,7 +50,7 @@ const Profile = () => {
                   Hey&#33; there I&#39;m
                 </ul>
                 <div className='flex flex-col font-serif font-extrabold text-6xl sm:text-7xl xl:text-9xl'>
-                  <ul className="flex  ">
+                  <ul className="flex text-slate-800 ">
                     {name.map((letter, index) => {
                       return(
                         <Name key={index}>
