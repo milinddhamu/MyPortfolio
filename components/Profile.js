@@ -42,7 +42,7 @@ const Profile = () => {
         <div className="flex flex-row justify-between from-slate50 to-slate400 w-screen grid-cols-2 grid-flow-row bg-opacity-30 backdrop-blur-[1px] rounded-xl shadow-xl m-20 xlg:grid-cols-1 border-[1px] border-slate-200">
           <div className="flex flex-col grid-cols-2 grid-flow-row justify-between w-full m-12">
             <div
-              className="flex flex-col animate-text max-h-max max-w-max bg-gradient-to-r from-indigo-500 via-violet-500 to-blue-600 bg-clip-text text-transparent md:flex md:justify-center sm:justify-center
+              className="flex flex-col animate-text max-h-max max-w-max bg-gradient-to-r from-indigo-700 via-violet-700 to-blue-800 bg-clip-text text-transparent md:flex md:justify-center sm:justify-center
             "
             >
               <div className='flex flex-col justify-start pl-4'>
